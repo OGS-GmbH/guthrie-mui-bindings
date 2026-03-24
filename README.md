@@ -5,9 +5,9 @@
 
 ![Preview](./docs/preview.avif)
 
-<a href="./LICENSE" target="_blank"><img src="https://img.shields.io/github/license/OGS-GmbH/guthrie-mui-bindings?color=0f434e&logo=hackthebox&logoColor=000000&labelColor=ffffff" /></a>
-<a href="https://github.com/OGS-GmbH/guthrie-mui-bindings/actions/workflows/main-deploy.yml" target="_blank"><img src="https://img.shields.io/github/actions/workflow/status/OGS-GmbH/guthrie-mui-bindings/main-deploy.yml?color=0f434e&logo=rocket&logoColor=000000&labelColor=ffffff" /></a>
-<a href="https://www.npmjs.com/package/@ogs-gmbh/guthrie-mui-bindings" target="_blank"><img src="https://img.shields.io/npm/v/%40ogs-gmbh%2Fguthrie-mui-bindings?color=0f434e&logo=npm&logoColor=000000&labelColor=ffffff" /></a>
+<a href="./LICENSE" target="_blank"><img alt="license badge" src="https://img.shields.io/github/license/OGS-GmbH/guthrie-mui-bindings?color=0f434e&logo=hackthebox&logoColor=000000&labelColor=ffffff" /></a>
+<a href="https://github.com/OGS-GmbH/guthrie-mui-bindings/actions/workflows/main-deploy.yml" target="_blank"><img alt="workflow badge" src="https://img.shields.io/github/actions/workflow/status/OGS-GmbH/guthrie-mui-bindings/main-deploy.yml?color=0f434e&logo=rocket&logoColor=000000&labelColor=ffffff" /></a>
+<a href="https://www.npmjs.com/package/@ogs-gmbh/guthrie-mui-bindings" target="_blank"><img alt="npm badge" src="https://img.shields.io/npm/v/%40ogs-gmbh%2Fguthrie-mui-bindings?color=0f434e&logo=npm&logoColor=000000&labelColor=ffffff" /></a>
 
 - **Predefined MUI Component Bindings**\
   Offers a curated set of bindings that map Guthrie JSON schemas directly to Material UI components, enabling ready-to-use UI elements without manual wiring.
@@ -37,7 +37,7 @@ To get a starting point, simply refer to our documentation at [ogs-gmbh.github.i
 
 Using npm:
 ```sh
-$ npm install -D @ogs-gmbh/guthrie-mui-bindings
+$ npm install @ogs-gmbh/guthrie-mui-bindings
 ```
 
 <details>
@@ -46,17 +46,17 @@ $ npm install -D @ogs-gmbh/guthrie-mui-bindings
   
   Using yarn:
   ```sh
-  $ pnpm add -D @ogs-gmbh/guthrie-mui-bindings
+  $ pnpm add @ogs-gmbh/guthrie-mui-bindings
   ```
   
   Using pnpm:
   ```sh
-  $ pnpm add -D @ogs-gmbh/guthrie-mui-bindings
+  $ pnpm add @ogs-gmbh/guthrie-mui-bindings
   ```
   
   Using bun:
   ```sh
-  $ bun add -D @ogs-gmbh/guthrie-mui-bindings
+  $ bun add @ogs-gmbh/guthrie-mui-bindings
   ```
 
 </details>
