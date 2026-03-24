@@ -1,0 +1,69 @@
+---
+prev: false
+next: false
+---
+
+# Getting started
+
+## Installation
+
+### Prerequisites
+
+- Node.js version 18 or higher.
+- A package manager: e.g. npm, pnpm, ...
+
+::: code-group
+
+```sh [npm]
+$ npm add @ogs-gmbh/guthrie-mui-bindings
+```
+
+```sh [pnpm]
+$ pnpm add @ogs-gmbh/guthrie-mui-bindings
+```
+
+```sh [yarn]
+$ yarn add @ogs-gmbh/guthrie-mui-bindings
+```
+
+```sh [bun]
+$ bun add @ogs-gmbh/guthrie-mui-bindings
+```
+
+:::
+
+### Usage
+
+Here's a simple example using [`getGuthrieMuiBindings`](/reference/Bindings/getGuthrieMuiBindings). You can get a deeper understanding by looking at the [reference](/reference).
+
+```tsx [example.tsx]
+import { Guthrie, withElements, withOperators, withFns } from "@ogs-gmbh/guthrie";
+import { getGuthrieMuiBindings } from "@ogs-gmbh/guthrie-mui-bindings";
+
+function MyPage () {
+  return (
+    <Guthrie
+      elements={
+        withElements({
+          elements: getGuthrieMuiBindings()
+        })
+      }
+      operators={
+        withOperators({
+          options: {
+            universal: true
+          }
+        })
+      }
+      fns={
+        withFns({
+          options: {
+            native: true
+          }
+        })
+      }
+      page={page}
+    />
+  )
+}
+```
