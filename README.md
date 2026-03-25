@@ -63,20 +63,20 @@ $ npm install @ogs-gmbh/guthrie-mui-bindings
 
 ### Usage
 
-Here's a simple example using [`getGuthrieMuiBindings`](https://ogs-gmbh.github.io/guthrie-mui-bindings/reference/Bindings/getGuthrieMuiBindings). You can get a deeper understanding by looking at the [reference](https://ogs-gmbh.github.io/guthrie-mui-bindings/reference).
+Here's a simple example using [`getMuiComponentBindings`](https://ogs-gmbh.github.io/guthrie-mui-bindings/reference/Bindings/getMuiComponentBindings). You can get a deeper understanding by looking at the [reference](https://ogs-gmbh.github.io/guthrie-mui-bindings/reference).
 
 ```tsx
 import { Guthrie, withElements, withOperators, withFns } from "@ogs-gmbh/guthrie";
-import { getGuthrieMuiBindings } from "@ogs-gmbh/guthrie-mui-bindings";
+import { getMuiComponentBindings } from "@ogs-gmbh/guthrie-mui-bindings";
 
 function MyPage () {
   return (
     <Guthrie
-      elements={
-        withElements({
-          elements: getGuthrieMuiBindings()
+      elements={withElements({
+        elements: getMuiComponentBindings({
+          mapNames: (value) => `mui-${value}`
         })
-      }
+      })}
       operators={
         withOperators({
           options: {
@@ -96,6 +96,7 @@ function MyPage () {
   )
 }
 ```
+
 
 ## License
 
