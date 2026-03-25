@@ -1,5 +1,16 @@
 # Changelog
 
+## [2.0.0](https://github.com/OGS-GmbH/guthrie-mui-bindings/compare/v1.0.1...v2.0.0) (2026-03-25)
+
+
+### ⚠ BREAKING CHANGES
+
+* add icon api and separate it from components
+
+### Features
+
+* add icon api and separate it from components ([91e7a24](https://github.com/OGS-GmbH/guthrie-mui-bindings/commit/91e7a24a843baa14c92f625bc8e782e399745d83))
+
 ## [1.0.1](https://github.com/OGS-GmbH/guthrie-mui-bindings/compare/v1.0.0...v1.0.1) (2026-03-24)
 
 
