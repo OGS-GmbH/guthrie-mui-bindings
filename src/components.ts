@@ -1,4 +1,4 @@
-import type { Elements } from "./types";
+import type { Elements, GetMuiComponentBindingsOptions } from "./types";
 import Button from "@mui/material/Button";
 import IconButton from "@mui/material/IconButton";
 import Autocomplete from "@mui/material/Autocomplete";
@@ -104,11 +104,8 @@ import TabScrollButton from "@mui/material/TabScrollButton";
 import Tabs from "@mui/material/Tabs";
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
-import PigmentContainer from "@mui/material/PigmentContainer";
 import Grid from "@mui/material/Grid";
-import PigmentGrid from "@mui/material/PigmentGrid";
 import Stack from "@mui/material/Stack";
-import PigmentStack from "@mui/material/PigmentStack";
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 import ImageListItemBar from "@mui/material/ImageListItemBar";
@@ -233,11 +230,8 @@ const muiComponentBindings: Elements = {
   "tabs": Tabs,
   "box": Box,
   "container": Container,
-  "pigment-containe": PigmentContainer,
   "grid": Grid,
-  "pigment-grid": PigmentGrid,
   "stack": Stack,
-  "pigment-stack": PigmentStack,
   "image-list": ImageList,
   "image-list-item": ImageListItem,
   "image-list-item-bar": ImageListItemBar,
@@ -250,6 +244,32 @@ const muiComponentBindings: Elements = {
   "zoom": Zoom
 }
 
+/**
+ * `Function` to get all MUI component bindings.
+ *
+ * @param options - Options for the function. See {@link GetMuiComponentBindingsOptions}.
+ * @returns An `Object` containing all MUI component bindings. The keys are the kebab-case version of the component names (or the mapped names if a mapping function is provided), and the values are the corresponding MUI components.
+ *
+ * @since 2.0.0
+ * @author Simon Kovtyk
+ * @category Bindings
+ */
+function getMuiComponentBindings (
+  options?: GetMuiComponentBindingsOptions
+): Elements {
+  if (!options?.mapNames)
+    return muiComponentBindings
+
+  const mappedBindings: Elements = {};
+
+  for (const key in muiComponentBindings) {
+    const mappedKey = options.mapNames(key);
+    mappedBindings[mappedKey] = muiComponentBindings[key]!;
+  }
+
+  return mappedBindings;
+}
+
 export {
-  muiComponentBindings
+  getMuiComponentBindings
 }

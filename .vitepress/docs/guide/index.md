@@ -34,20 +34,20 @@ $ bun add @ogs-gmbh/guthrie-mui-bindings
 
 ### Usage
 
-Here's a simple example using [`getGuthrieMuiBindings`](/reference/Bindings/getGuthrieMuiBindings). You can get a deeper understanding by looking at the [reference](/reference).
+Here's a simple example using [`getMuiComponentBindings`](/reference/Bindings/getMuiComponentBindings). You can get a deeper understanding by looking at the [reference](/reference).
 
 ```tsx [example.tsx]
 import { Guthrie, withElements, withOperators, withFns } from "@ogs-gmbh/guthrie";
-import { getGuthrieMuiBindings } from "@ogs-gmbh/guthrie-mui-bindings";
+import { getMuiComponentBindings } from "@ogs-gmbh/guthrie-mui-bindings";
 
 function MyPage () {
   return (
     <Guthrie
-      elements={
-        withElements({
-          elements: getGuthrieMuiBindings()
+      elements={withElements({
+        elements: getMuiComponentBindings({
+          mapNames: (value) => `mui-${value}`
         })
-      }
+      })}
       operators={
         withOperators({
           options: {
