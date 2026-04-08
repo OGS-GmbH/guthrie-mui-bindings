@@ -1,14 +1,3 @@
-import type { ElementType } from "react";
-
-/**
- * Representing the bindings of the MUI components and icons.
- *
- * @since 1.0.0
- * @author Simon Kovtyk
- * @category Types
- */
-type Elements = Record<string, ElementType>; // TODO(simonkov): Replace with exposed type from guthrie
-
 /**
  * Representing the available variants of MUI icons as union of `string` literals.
  *
@@ -36,20 +25,20 @@ type MapNamesFn = (value: string) => string;
  */
 type GetMuiIconBindingsOptions = {
   /**
-  * An `Array` of `string` literals representing the variants of MUI icons to include in the bindings. The available variants are derived from {@link IconVariant}.
+   * An `Array` of `string` literals representing the variants of MUI icons to include in the bindings. The available variants are derived from {@link IconVariant}.
    *
    * @since 2.0.0
    * @author Simon Kovtyk
    */
-  variants: IconVariant[],
+  variants: IconVariant[];
   /**
    * Function for mapping component names. See {@link MapNamesFn}.
    *
    * @since 2.0.0
    * @author Simon Kovtyk
    */
-  mapNames?: MapNamesFn
-}
+  mapNames?: MapNamesFn;
+};
 
 /**
  * Options for the {@link getMuiComponentBindings} function.
@@ -65,13 +54,7 @@ type GetMuiComponentBindingsOptions = {
    * @since 2.0.0
    * @author Simon Kovtyk
    */
-  mapNames?: MapNamesFn
-}
+  mapNames?: MapNamesFn;
+};
 
-export type {
-  Elements,
-  IconVariant,
-  MapNamesFn,
-  GetMuiIconBindingsOptions,
-  GetMuiComponentBindingsOptions
-}
+export type { IconVariant, MapNamesFn, GetMuiIconBindingsOptions, GetMuiComponentBindingsOptions };

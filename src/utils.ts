@@ -20,6 +20,4 @@ function pascalCaseToKebabCase(value: string): string {
   return result;
 }
 
-export {
-  pascalCaseToKebabCase
-}
+export { pascalCaseToKebabCase };

@@ -40,7 +40,7 @@ Here's a simple example using [`getMuiComponentBindings`](/reference/Bindings/ge
 import { Guthrie, withElements, withOperators, withFns } from "@ogs-gmbh/guthrie";
 import { getMuiComponentBindings } from "@ogs-gmbh/guthrie-mui-bindings";
 
-function MyPage () {
+function MyPage() {
   return (
     <Guthrie
       elements={withElements({
@@ -48,22 +48,18 @@ function MyPage () {
           mapNames: (value) => `mui-${value}`
         })
       })}
-      operators={
-        withOperators({
-          options: {
-            universal: true
-          }
-        })
-      }
-      fns={
-        withFns({
-          options: {
-            native: true
-          }
-        })
-      }
+      operators={withOperators({
+        options: {
+          universal: true
+        }
+      })}
+      fns={withFns({
+        options: {
+          native: true
+        }
+      })}
       page={page}
     />
-  )
+  );
 }
 ```

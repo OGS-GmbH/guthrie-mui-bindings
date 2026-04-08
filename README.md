@@ -1,7 +1,8 @@
-> *We're OGS, check out our work on [github.com/ogs-gmbh](https://github.com/ogs-gmbh)*
+> _We're OGS, check out our work on [github.com/ogs-gmbh](https://github.com/ogs-gmbh)_
 
 # Guthrie MUI Bindings
-*UI integration layer that connects the dynamic JSON-driven rendering capabilities of Guthrie with the component ecosystem of Material UI (MUI).*
+
+_UI integration layer that connects the dynamic JSON-driven rendering capabilities of Guthrie with the component ecosystem of Material UI (MUI)._
 
 ![Preview](./docs/preview.avif)
 
@@ -36,6 +37,7 @@ To get a starting point, simply refer to our documentation at [ogs-gmbh.github.i
 ### Installation
 
 Using npm:
+
 ```sh
 $ npm install @ogs-gmbh/guthrie-mui-bindings
 ```
@@ -69,7 +71,7 @@ Here's a simple example using [`getMuiComponentBindings`](https://ogs-gmbh.githu
 import { Guthrie, withElements, withOperators, withFns } from "@ogs-gmbh/guthrie";
 import { getMuiComponentBindings } from "@ogs-gmbh/guthrie-mui-bindings";
 
-function MyPage () {
+function MyPage() {
   return (
     <Guthrie
       elements={withElements({
@@ -77,47 +79,46 @@ function MyPage () {
           mapNames: (value) => `mui-${value}`
         })
       })}
-      operators={
-        withOperators({
-          options: {
-            universal: true
-          }
-        })
-      }
-      fns={
-        withFns({
-          options: {
-            native: true
-          }
-        })
-      }
+      operators={withOperators({
+        options: {
+          universal: true
+        }
+      })}
+      fns={withFns({
+        options: {
+          native: true
+        }
+      })}
       page={page}
     />
-  )
+  );
 }
 ```
-
 
 ## License
 
 The MIT License (MIT) - Please have a look at the [LICENSE file](./LICENSE) for more details.
 
 ## Contributing
+
 Contributions are always welcome and greatly appreciated. Whether you want to report a bug, suggest a new feature, or improve the documentation, your input helps make the project better for everyone.
 
 Feel free to submit a pull request, issue or feature request.
 
 ### Issues and Feature Requests
+
 Reporting an issue or creating a feature request is made by creating a new issue on this repository.
 
 You can create a [new issue or feature request here](../../issues/new/choose).
 
 ### Pull Requests
+
 GitHub offers a solid guideline for contributing to open source projects through pull requests, covering key practices. These best practices provide a reliable starting point for making effective contributions.
 
 You can find the [guidelines here](https://docs.github.com/get-started/exploring-projects-on-github/contributing-to-a-project).
 
 ### Code Of Conduct
+
 We are committed to keeping a welcoming, inclusive, and respectful community for everyone. To help us achieve this, we kindly ask that you adhere to our [Code of Conduct](./CODE_OF_CONDUCT.md).
 
 ## Disclaimer

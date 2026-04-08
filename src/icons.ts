@@ -1,13 +1,14 @@
-import type { Elements, GetMuiIconBindingsOptions, IconVariant } from "./types";
-import { pascalCaseToKebabCase } from "./utils";
+import type { Elements } from "@ogs-gmbh/guthrie";
 import type { ElementType } from "react";
+import type { GetMuiIconBindingsOptions, IconVariant } from "./types.js";
+import { pascalCaseToKebabCase } from "./utils.js";
 
 const variantSuffix: Record<Exclude<IconVariant, "filled">, string> = {
   outlined: "Outlined",
   rounded: "Rounded",
   twoTone: "TwoTone",
   sharp: "Sharp"
-}
+};
 
 /**
  * `Function` to get MUI icons bindings based on the provided options.
@@ -21,10 +22,8 @@ const variantSuffix: Record<Exclude<IconVariant, "filled">, string> = {
  * @author Simon Kovtyk
  * @category Bindings
  */
-async function getMuiIconBindings (
-  options: GetMuiIconBindingsOptions
-): Promise<Elements> {
-  const icons = await import("@mui/icons-material")
+async function getMuiIconBindings(options: GetMuiIconBindingsOptions): Promise<Elements> {
+  const icons = await import("@mui/icons-material");
   const filteredIcons: Record<string, ElementType> = {};
 
   for (const key in icons) {
@@ -53,9 +52,7 @@ async function getMuiIconBindings (
 
     if (appliesToVariant) {
       const kebabCasedKey = pascalCaseToKebabCase(key);
-      const currentKey = options.mapNames
-        ? options.mapNames(kebabCasedKey)
-        : kebabCasedKey;
+      const currentKey = options.mapNames ? options.mapNames(kebabCasedKey) : kebabCasedKey;
 
       // @ts-ignore
       filteredIcons[currentKey] = icons[key];
@@ -65,6 +62,4 @@ async function getMuiIconBindings (
   return filteredIcons;
 }
 
-export {
-  getMuiIconBindings
-}
+export { getMuiIconBindings };

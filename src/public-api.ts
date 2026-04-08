@@ -1,3 +1,3 @@
-export * from "./components";
-export * from "./icons";
-export * from "./types";
+export * from "./components.js";
+export * from "./icons.js";
+export * from "./types.js";
