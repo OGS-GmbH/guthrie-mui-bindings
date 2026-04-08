@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.3](https://github.com/OGS-GmbH/guthrie-mui-bindings/compare/v2.0.2...v2.0.3) (2026-04-08)
+
+
+### Bug Fixes
+
+* **deps:** bump [@mui](https://github.com/mui) ([bf4eaf2](https://github.com/OGS-GmbH/guthrie-mui-bindings/commit/bf4eaf22838d04194d05a6513a1cf208ccc83db7))
+
 ## [2.0.2](https://github.com/OGS-GmbH/guthrie-mui-bindings/compare/v2.0.1...v2.0.2) (2026-04-08)
 
 
