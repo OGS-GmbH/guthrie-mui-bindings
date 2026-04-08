@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.2](https://github.com/OGS-GmbH/guthrie-mui-bindings/compare/v2.0.1...v2.0.2) (2026-04-08)
+
+
+### Bug Fixes
+
+* add guthrie as dependency ([f4c6fce](https://github.com/OGS-GmbH/guthrie-mui-bindings/commit/f4c6fcecf6ac1d49a0c7da20eb1c96f82b588370))
+
 ## [2.0.1](https://github.com/OGS-GmbH/guthrie-mui-bindings/compare/v2.0.0...v2.0.1) (2026-03-25)
 
 ### Bug Fixes
