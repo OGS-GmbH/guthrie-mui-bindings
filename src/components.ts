@@ -116,7 +116,7 @@ import Tooltip from "@mui/material/Tooltip";
 import Typography from "@mui/material/Typography";
 import Zoom from "@mui/material/Zoom";
 import type { Elements } from "@ogs-gmbh/guthrie";
-import type { GetMuiComponentBindingsOptions } from "./types.js";
+import type { GetMuiComponentBindingsOptions } from "./components-types.js";
 
 /**
  * `Object` containing all MUI components that are supported by the bindings. The keys are the kebab-case version of the component names, and the values are the corresponding MUI components.

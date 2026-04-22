@@ -33,8 +33,18 @@ export default defineConfig({
         bugs: `https://github.com/OGS-GmbH/${repositoryName}/issues`,
         repository: `https://github.com/OGS-GmbH/${repositoryName}`,
         exports: {
-          types: "./public-api.d.ts",
-          default: "./public-api.js"
+          ".": {
+            types: "./public-api.d.ts",
+            default: "./public-api.js"
+          },
+          "./components": {
+            types: "./components-public-api.d.ts",
+            default: "./components-public-api.js"
+          },
+          "./icons": {
+            types: "./icons-public-api.d.ts",
+            default: "./icons-public-api.js"
+          }
         }
       }
     })

@@ -1,6 +1,6 @@
 import type { Elements } from "@ogs-gmbh/guthrie";
 import type { ElementType } from "react";
-import type { GetMuiIconBindingsOptions, IconVariant } from "./types.js";
+import type { GetMuiIconBindingsOptions, IconVariant } from "./icons-types.js";
 import { pascalCaseToKebabCase } from "./utils.js";
 
 const variantSuffix: Record<Exclude<IconVariant, "filled">, string> = {
