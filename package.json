@@ -1,6 +1,6 @@
 {
   "name": "@ogs-gmbh/guthrie-mui-bindings",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "description": "UI integration layer that connects the dynamic JSON-driven rendering capabilities of Guthrie with the component ecosystem of Material UI (MUI) in TypeScript applications.",
   "keywords": [
     "component-mapping",

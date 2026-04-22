@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.4](https://github.com/OGS-GmbH/guthrie-mui-bindings/compare/v2.0.3...v2.0.4) (2026-04-22)
+
+
+### Bug Fixes
+
+* support splitting icon and component exports ([37cb45f](https://github.com/OGS-GmbH/guthrie-mui-bindings/commit/37cb45f1cef9845c9e308cbfcd19cd02565390b6))
+
 ## [2.0.3](https://github.com/OGS-GmbH/guthrie-mui-bindings/compare/v2.0.2...v2.0.3) (2026-04-08)
 
 
