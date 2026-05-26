@@ -38,6 +38,11 @@ import Drawer from "@mui/material/Drawer";
 import Fab from "@mui/material/Fab";
 import Fade from "@mui/material/Fade";
 import FilledInput from "@mui/material/FilledInput";
+import FormControl from "@mui/material/FormControl";
+import FormControlLabel from "@mui/material/FormControlLabel";
+import FormGroup from "@mui/material/FormGroup";
+import FormHelperText from "@mui/material/FormHelperText";
+import FormLabel from "@mui/material/FormLabel";
 import Grid from "@mui/material/Grid";
 import Grow from "@mui/material/Grow";
 import Icon from "@mui/material/Icon";
@@ -242,7 +247,12 @@ const muiComponentBindings: Elements = {
   portal: Portal,
   "textarea-autosize": TextareaAutosize,
   fade: Fade,
-  zoom: Zoom
+  zoom: Zoom,
+  "form-group": FormGroup,
+  "form-control": FormControl,
+  "form-control-label": FormControlLabel,
+  "form-helper-text": FormHelperText,
+  "form-label": FormLabel
 };
 
 /**
