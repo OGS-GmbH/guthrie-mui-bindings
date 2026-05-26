@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.0](https://github.com/OGS-GmbH/guthrie-mui-bindings/compare/v2.0.4...v2.1.0) (2026-05-26)
+
+
+### Features
+
+* add form-components ([eed4886](https://github.com/OGS-GmbH/guthrie-mui-bindings/commit/eed48867a2a2b69d108c8d1d9b9aae09a27eae4d))
+
 ## [2.0.4](https://github.com/OGS-GmbH/guthrie-mui-bindings/compare/v2.0.3...v2.0.4) (2026-04-22)
 
 
