@@ -1,4 +1,4 @@
-import type { MapNamesFn } from "./types.js";
+import type { MapNamesFn } from "../types.js";
 
 /**
  * Representing the available variants of MUI icons as union of `string` literals.

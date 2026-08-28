@@ -55,7 +55,7 @@
     "@emotion/styled": "^11.14.1",
     "@mui/icons-material": "^9.0.0",
     "@mui/material": "^9.0.0",
-    "@ogs-gmbh/guthrie": "^1.0.1",
+    "@ogs-gmbh/guthrie": "file:/home/simonkov/Projects/ogs/github/guthrie-re",
     "react": "^19.2.4"
   },
   "devDependencies": {

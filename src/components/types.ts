@@ -1,4 +1,4 @@
-import type { MapNamesFn } from "./types.js";
+import type { MapNamesFn } from "../types.js";
 
 type GetMuiComponentBindingsOptions = {
   /**
