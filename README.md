@@ -45,21 +45,24 @@ $ npm install @ogs-gmbh/guthrie-mui-bindings
 <details>
   <summary>Using a different package managers?</summary>
   <br/>
-  
-  Using yarn:
-  ```sh
-  $ pnpm add @ogs-gmbh/guthrie-mui-bindings
-  ```
-  
-  Using pnpm:
-  ```sh
-  $ pnpm add @ogs-gmbh/guthrie-mui-bindings
-  ```
-  
-  Using bun:
-  ```sh
-  $ bun add @ogs-gmbh/guthrie-mui-bindings
-  ```
+
+Using yarn:
+
+```sh
+$ pnpm add @ogs-gmbh/guthrie-mui-bindings
+```
+
+Using pnpm:
+
+```sh
+$ pnpm add @ogs-gmbh/guthrie-mui-bindings
+```
+
+Using bun:
+
+```sh
+$ bun add @ogs-gmbh/guthrie-mui-bindings
+```
 
 </details>
 

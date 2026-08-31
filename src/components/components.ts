@@ -118,8 +118,8 @@ import Typography from "@mui/material/Typography";
 import Zoom from "@mui/material/Zoom";
 import type { Elements } from "@ogs-gmbh/guthrie";
 import type { GetMuiComponentBindingsOptions } from "./types.js";
-import { Select } from "./wrappers/components/select.js";
 import { MenuItem } from "./wrappers/components/menu-item.js";
+import { Select } from "./wrappers/components/select.js";
 import { Tab } from "./wrappers/components/tab.js";
 import { Tabs } from "./wrappers/components/tabs.js";
 

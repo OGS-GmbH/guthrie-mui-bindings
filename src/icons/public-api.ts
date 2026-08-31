@@ -1,2 +1,3 @@
+// oxlint-disable-next-line no-barrel-file
 export * from "./icons.js";
-export * from "./icons-types.js";
+export * from "./types.js";

@@ -1,8 +1,8 @@
-"use client"
+"use client";
 
 import { MenuItem as MuiMenuItem, type MenuItemProps as MuiMenuItemProps } from "@mui/material";
-import { useSelect } from "../hooks/select.js";
 import { type MouseEvent, useMemo } from "react";
+import { useSelect } from "../hooks/select.js";
 
 type MenuItemProps = MuiMenuItemProps;
 
@@ -13,35 +13,27 @@ function MenuItem({
   ...props
 }: MenuItemProps) {
   const select = useSelect();
-  const selected = useMemo(() => selectedProp ?? String(valueProp) === select?.value, [valueProp, select?.value]);
+  const selected = useMemo(
+    () => selectedProp ?? String(valueProp) === select?.value,
+    [valueProp, select?.value]
+  );
 
   function handleClick(event: MouseEvent<HTMLLIElement>) {
     event.preventDefault();
 
     if (select !== null) {
       select.setChildren(childrenProp);
-      select.setValue(
-        String(valueProp)
-      );
+      select.setValue(String(valueProp));
     }
   }
 
   return (
-    <MuiMenuItem
-      {...props}
-      selected={selected}
-      onClick={handleClick}
-    >
+    <MuiMenuItem {...props} selected={selected} onClick={handleClick}>
       {childrenProp}
     </MuiMenuItem>
-  )
+  );
 }
 
-export type {
-  MenuItemProps
-}
+export type { MenuItemProps };
 
-export {
-  MenuItem
-}
-
+export { MenuItem };
