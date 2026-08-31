@@ -25,12 +25,12 @@ type GetMuiIconBindingsOptions = {
    */
   variants: IconVariant[];
   /**
-   * Function for mapping component names. See {@link MapNamesFn}.
+   * Function for mapping component names.
    *
    * @since 2.0.0
    * @author Simon Kovtyk
    */
-  mapNames?: MapNameFn;
+  mapName?: MapNameFn;
 };
 
 export type { IconVariant, GetMuiIconBindingsOptions };

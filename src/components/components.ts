@@ -266,12 +266,12 @@ const muiComponentBindings: Elements = {
  * @category Bindings
  */
 function getMuiComponentBindings(options?: GetMuiComponentBindingsOptions): Elements {
-  if (!options?.mapNames) return muiComponentBindings;
+  if (!options?.mapName) return muiComponentBindings;
 
   const mappedBindings: Elements = {};
 
   for (const key in muiComponentBindings) {
-    const mappedKey = options.mapNames(key);
+    const mappedKey = options.mapName(key);
     mappedBindings[mappedKey] = muiComponentBindings[key]!;
   }
 

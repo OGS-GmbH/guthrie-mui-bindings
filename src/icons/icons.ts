@@ -52,7 +52,7 @@ async function getMuiIconBindings(options: GetMuiIconBindingsOptions): Promise<E
 
     if (appliesToVariant) {
       const kebabCasedKey = pascalCaseToKebabCase(key);
-      const currentKey = options.mapNames ? options.mapNames(kebabCasedKey) : kebabCasedKey;
+      const currentKey = options.mapName ? options.mapName(kebabCasedKey) : kebabCasedKey;
 
       // @ts-ignore
       filteredIcons[currentKey] = icons[key];

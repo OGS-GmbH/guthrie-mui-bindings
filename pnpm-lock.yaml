@@ -3804,7 +3804,6 @@ snapshots:
 
   '@ogs-gmbh/guthrie@file:../guthrie-re/dist/main':
     dependencies:
-      '@types/node': 26.4.0
       es-toolkit: 1.52.0
       immer: 11.1.18
       react: 19.2.8
