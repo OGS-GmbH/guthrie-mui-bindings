@@ -1,13 +1,13 @@
-import type { MapNamesFn } from "./types.js";
+import type { MapNameFn } from "@ogs-gmbh/guthrie";
 
 type GetMuiComponentBindingsOptions = {
   /**
-   * Function for mapping component names. See {@link MapNamesFn}.
+   * Function for mapping component names.
    *
    * @since 2.0.0
    * @author Simon Kovtyk
    */
-  mapNames?: MapNamesFn;
+  mapName?: MapNameFn;
 };
 
 export type { GetMuiComponentBindingsOptions };

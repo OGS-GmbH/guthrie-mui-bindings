@@ -1,7 +1,7 @@
 import type { Elements } from "@ogs-gmbh/guthrie";
 import type { ElementType } from "react";
-import type { GetMuiIconBindingsOptions, IconVariant } from "./icons-types.js";
-import { pascalCaseToKebabCase } from "./utils.js";
+import { pascalCaseToKebabCase } from "../utils.js";
+import type { GetMuiIconBindingsOptions, IconVariant } from "./types.js";
 
 const variantSuffix: Record<Exclude<IconVariant, "filled">, string> = {
   outlined: "Outlined",
@@ -52,7 +52,7 @@ async function getMuiIconBindings(options: GetMuiIconBindingsOptions): Promise<E
 
     if (appliesToVariant) {
       const kebabCasedKey = pascalCaseToKebabCase(key);
-      const currentKey = options.mapNames ? options.mapNames(kebabCasedKey) : kebabCasedKey;
+      const currentKey = options.mapName ? options.mapName(kebabCasedKey) : kebabCasedKey;
 
       // @ts-ignore
       filteredIcons[currentKey] = icons[key];

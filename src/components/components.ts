@@ -64,7 +64,6 @@ import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import ListSubheader from "@mui/material/ListSubheader";
 import Menu from "@mui/material/Menu";
-import MenuItem from "@mui/material/MenuItem";
 import MenuList from "@mui/material/MenuList";
 import MobileStepper from "@mui/material/MobileStepper";
 import Modal from "@mui/material/Modal";
@@ -79,7 +78,6 @@ import Portal from "@mui/material/Portal";
 import Radio from "@mui/material/Radio";
 import RadioGroup from "@mui/material/RadioGroup";
 import Rating from "@mui/material/Rating";
-import Select from "@mui/material/Select";
 import Skeleton from "@mui/material/Skeleton";
 import Slide from "@mui/material/Slide";
 import Slider from "@mui/material/Slider";
@@ -99,7 +97,6 @@ import Stepper from "@mui/material/Stepper";
 import SvgIcon from "@mui/material/SvgIcon";
 import SwipeableDrawer from "@mui/material/SwipeableDrawer";
 import Switch from "@mui/material/Switch";
-import Tab from "@mui/material/Tab";
 import Table from "@mui/material/Table";
 import TableBody from "@mui/material/TableBody";
 import TableCell from "@mui/material/TableCell";
@@ -110,7 +107,6 @@ import TablePagination from "@mui/material/TablePagination";
 import TablePaginationActions from "@mui/material/TablePaginationActions";
 import TableRow from "@mui/material/TableRow";
 import TableSortLabel from "@mui/material/TableSortLabel";
-import Tabs from "@mui/material/Tabs";
 import TabScrollButton from "@mui/material/TabScrollButton";
 import TextareaAutosize from "@mui/material/TextareaAutosize";
 import TextField from "@mui/material/TextField";
@@ -121,7 +117,11 @@ import Tooltip from "@mui/material/Tooltip";
 import Typography from "@mui/material/Typography";
 import Zoom from "@mui/material/Zoom";
 import type { Elements } from "@ogs-gmbh/guthrie";
-import type { GetMuiComponentBindingsOptions } from "./components-types.js";
+import type { GetMuiComponentBindingsOptions } from "./types.js";
+import { MenuItem } from "./wrappers/components/menu-item.js";
+import { Select } from "./wrappers/components/select.js";
+import { Tab } from "./wrappers/components/tab.js";
+import { Tabs } from "./wrappers/components/tabs.js";
 
 /**
  * `Object` containing all MUI components that are supported by the bindings. The keys are the kebab-case version of the component names, and the values are the corresponding MUI components.
@@ -266,12 +266,12 @@ const muiComponentBindings: Elements = {
  * @category Bindings
  */
 function getMuiComponentBindings(options?: GetMuiComponentBindingsOptions): Elements {
-  if (!options?.mapNames) return muiComponentBindings;
+  if (!options?.mapName) return muiComponentBindings;
 
   const mappedBindings: Elements = {};
 
   for (const key in muiComponentBindings) {
-    const mappedKey = options.mapNames(key);
+    const mappedKey = options.mapName(key);
     mappedBindings[mappedKey] = muiComponentBindings[key]!;
   }
 

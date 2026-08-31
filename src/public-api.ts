@@ -1,5 +1,4 @@
-export * from "./components.js";
-export * from "./components-types.js";
-export * from "./icons.js";
-export * from "./icons-types.js";
-export * from "./types.js";
+// oxlint-disable-next-line no-barrel-file
+export * from "./components/wrappers/public-api.js";
+export * from "./components/public-api.js";
+export * from "./icons/public-api.js";

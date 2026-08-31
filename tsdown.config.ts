@@ -38,12 +38,12 @@ export default defineConfig({
             default: "./public-api.js"
           },
           "./components": {
-            types: "./components-public-api.d.ts",
-            default: "./components-public-api.js"
+            types: "./components/public-api.d.ts",
+            default: "./components/public-api.js"
           },
           "./icons": {
-            types: "./icons-public-api.d.ts",
-            default: "./icons-public-api.js"
+            types: "./icons/public-api.d.ts",
+            default: "./icons/public-api.js"
           }
         }
       }
